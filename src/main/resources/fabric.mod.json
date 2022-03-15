@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "malechialib",
+  "version": "${version}",
+
+  "name": "Malechia Lib",
+  "description": "A library mod used by Malechia",
+  "authors": [
+    "Alexandra"
+  ],
+  "contact": {
+    "sources": "https://github.com/Alexandra-Myers/Malechia-Lib"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/malechialib/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.alexandra.malechialib.MalechiaLib"
+    ]
+  },
+  "mixins": [
+    "malechialib.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
