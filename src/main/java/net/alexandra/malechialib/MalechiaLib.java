@@ -1,5 +1,6 @@
 package net.alexandra.malechialib;
 
+import net.alexandra.malechialib.tag.CustomBlockTags;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,5 +12,6 @@ public class MalechiaLib implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        CustomBlockTags.registerBlockTags();
     }
 }

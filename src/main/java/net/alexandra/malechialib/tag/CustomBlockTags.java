@@ -1,5 +1,6 @@
 package net.alexandra.malechialib.tag;
 
+import net.alexandra.malechialib.MalechiaLib;
 import net.minecraft.block.Block;
 import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
@@ -14,6 +15,9 @@ public final class CustomBlockTags {
 
     private static TagKey<Block> register(String id) {
         return TagKey.of(Registry.BLOCK_KEY, new Identifier(id));
+    }
+    public static void registerBlockTags() {
+        MalechiaLib.LOGGER.info("registering mod items for " + MalechiaLib.MOD_ID);
     }
 }
 
