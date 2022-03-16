@@ -14,7 +14,7 @@ public final class CustomBlockTags {
     }
 
     private static TagKey<Block> register(String id) {
-        return TagKey.of(Registry.BLOCK_KEY, new Identifier(id));
+        return TagKey.of(Registry.BLOCK_KEY, new Identifier(MalechiaLib.MOD_ID, id));
     }
     public static void registerBlockTags() {
         MalechiaLib.LOGGER.info("registering mod items for " + MalechiaLib.MOD_ID);
